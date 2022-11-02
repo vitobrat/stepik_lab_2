@@ -229,7 +229,7 @@ void function3(int arr[],int arr1[]){
     start = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
     max = arr1[0];
     min = arr1[0];
-    for (int i = 0; i < N; i++){
+    for (int i = 1; i < N; i++){
         max = arr1[i]>max ? arr1[i] : max;
         min = arr1[i]<min ? arr1[i] : min;
     }
